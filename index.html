@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oh My Business English</title>
+<meta name="description" content="한국 회사에서 매일 쓰는 말을 영어로 하루에 하나씩 익혀요.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --bg: #f7f6f2;
+    --surface: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6b6b70;
+    --line: #e4e2dc;
+    --accent: #2f5bd3;
+    --accent-soft: #e8eefc;
+    --en: #1a3fa6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416;
+      --surface: #1e1e21;
+      --text: #ececee;
+      --muted: #9a9aa2;
+      --line: #2e2e33;
+      --accent: #7c9cff;
+      --accent-soft: #232b45;
+      --en: #a9bdff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 16px 80px; }
+  header h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+  header p { margin: 6px 0 0; color: var(--muted); }
+  .stats { margin-top: 12px; font-size: 14px; color: var(--muted); }
+  .stats b { color: var(--text); }
+
+  .controls {
+    position: sticky; top: 0; z-index: 5;
+    background: var(--bg);
+    padding: 16px 0 12px; margin-top: 20px;
+    border-bottom: 1px solid var(--line);
+  }
+  .search {
+    width: 100%; padding: 11px 14px; font: inherit; font-size: 15px;
+    border: 1px solid var(--line); border-radius: 10px;
+    background: var(--surface); color: var(--text);
+  }
+  .search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .chip {
+    font: inherit; font-size: 13px; padding: 5px 12px; cursor: pointer;
+    border: 1px solid var(--line); border-radius: 999px;
+    background: var(--surface); color: var(--muted);
+  }
+  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .day { margin-top: 32px; }
+  .day h2 {
+    font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px; text-transform: uppercase;
+  }
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px 18px 16px; margin-bottom: 12px;
+  }
+  .card-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+  .ko { font-size: 17px; font-weight: 600; margin: 0; }
+  .tag {
+    flex-shrink: 0; font-size: 12px; padding: 2px 8px; border-radius: 6px;
+    background: var(--accent-soft); color: var(--accent);
+  }
+  .en-row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+  .en { font-family: "Inter", sans-serif; font-size: 18px; font-weight: 600; color: var(--en); margin: 0; }
+  .speak {
+    flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; cursor: pointer;
+    border: 1px solid var(--line); background: transparent; color: var(--muted);
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .speak:hover { color: var(--accent); border-color: var(--accent); }
+  .alt { margin: 8px 0 0; padding: 0; list-style: none; font-family: "Inter", sans-serif; font-size: 14.5px; color: var(--text); }
+  .alt li::before { content: "또는 · "; color: var(--muted); font-family: "Pretendard", sans-serif; font-size: 12px; }
+  details { margin-top: 10px; }
+  summary { cursor: pointer; font-size: 13px; color: var(--muted); }
+  .example {
+    margin-top: 8px; padding: 10px 12px; border-left: 3px solid var(--accent);
+    background: var(--accent-soft); border-radius: 0 8px 8px 0; font-size: 14.5px;
+  }
+  .example .ex-en { font-family: "Inter", sans-serif; }
+  .example .ex-ko { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+  .note { margin: 8px 0 0; font-size: 13.5px; color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 48px 0; }
+  footer { margin-top: 48px; font-size: 13px; color: var(--muted); text-align: center; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Oh My Business English</h1>
+    <p>한국 회사에서 매일 쓰는 말을 영어로, 하루에 하나씩.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="controls">
+    <input class="search" id="search" type="search" placeholder="한글 또는 영어로 검색 (예: 확인, heads-up)" autocomplete="off">
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <main id="list"></main>
+
+  <footer>
+    <a href="https://github.com/dev-jonghoonpark/oh-my-business-english">GitHub</a>
+  </footer>
+</div>
+
+<script>
+(async function () {
+  const $list = document.getElementById("list");
+  const $search = document.getElementById("search");
+  const $chips = document.getElementById("chips");
+  const $stats = document.getElementById("stats");
+
+  let phrases = [];
+  try {
+    const res = await fetch("phrases.json", { cache: "no-cache" });
+    phrases = await res.json();
+  } catch (e) {
+    $list.innerHTML = '<p class="empty">표현 목록을 불러오지 못했습니다.</p>';
+    return;
+  }
+
+  const days = [...new Set(phrases.map(p => p.added))].sort();
+  const dayIndex = Object.fromEntries(days.map((d, i) => [d, i + 1]));
+  const categories = ["전체", ...new Set(phrases.map(p => p.category))];
+  let activeCategory = "전체";
+
+  $stats.innerHTML = `표현 <b>${phrases.length}</b>개 · <b>${days.length}</b>일째 · 마지막 추가 ${days[days.length - 1]}`;
+
+  $chips.innerHTML = categories.map(c =>
+    `<button class="chip" type="button" aria-pressed="${c === activeCategory}" data-cat="${c}">${c}</button>`
+  ).join("");
+  $chips.addEventListener("click", e => {
+    const btn = e.target.closest(".chip");
+    if (!btn) return;
+    activeCategory = btn.dataset.cat;
+    $chips.querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", b === btn));
+    render();
+  });
+  $search.addEventListener("input", render);
+
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  function speak(text) {
+    if (!("speechSynthesis" in window)) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/\[[^\]]*\]/g, "something"));
+    u.lang = "en-US";
+    u.rate = 0.95;
+    speechSynthesis.speak(u);
+  }
+  $list.addEventListener("click", e => {
+    const btn = e.target.closest(".speak");
+    if (btn) speak(btn.dataset.text);
+  });
+
+  const speakIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>';
+
+  function card(p) {
+    const alts = (p.alt || []).map(a => `<li>${esc(a)}</li>`).join("");
+    const hasMore = p.example || p.note;
+    return `
+      <article class="card">
+        <div class="card-top">
+          <p class="ko">${esc(p.ko)}</p>
+          <span class="tag">${esc(p.category)}</span>
+        </div>
+        <div class="en-row">
+          <p class="en">${esc(p.en)}</p>
+          <button class="speak" type="button" data-text="${esc(p.en)}" aria-label="발음 듣기">${speakIcon}</button>
+        </div>
+        ${alts ? `<ul class="alt">${alts}</ul>` : ""}
+        ${hasMore ? `
+        <details>
+          <summary>예문 · 팁</summary>
+          ${p.example ? `<div class="example"><div class="ex-en">${esc(p.example)}</div>${p.exampleKo ? `<div class="ex-ko">${esc(p.exampleKo)}</div>` : ""}</div>` : ""}
+          ${p.note ? `<p class="note">💡 ${esc(p.note)}</p>` : ""}
+        </details>` : ""}
+      </article>`;
+  }
+
+  function render() {
+    const q = $search.value.trim().toLowerCase();
+    const filtered = phrases.filter(p => {
+      if (activeCategory !== "전체" && p.category !== activeCategory) return false;
+      if (!q) return true;
+      return [p.ko, p.en, ...(p.alt || []), p.example, p.exampleKo, p.note]
+        .filter(Boolean).some(s => s.toLowerCase().includes(q));
+    });
+
+    if (!filtered.length) {
+      $list.innerHTML = '<p class="empty">찾는 표현이 없습니다.</p>';
+      return;
+    }
+
+    // 최신 날짜가 위로
+    const byDay = {};
+    filtered.forEach(p => (byDay[p.added] ||= []).push(p));
+    $list.innerHTML = Object.keys(byDay).sort().reverse().map(d => `
+      <section class="day">
+        <h2>Day ${dayIndex[d]} · ${d} · ${byDay[d].length}개</h2>
+        ${byDay[d].sort((a, b) => a.id - b.id).map(card).join("")}
+      </section>`).join("");
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>

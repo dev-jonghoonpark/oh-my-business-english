@@ -1,0 +1,263 @@
+[
+  {
+    "id": 1, "added": "2026-10-30", "category": "회의·의견",
+    "ko": "심플하게 가보시죠",
+    "en": "Let's keep it simple.",
+    "alt": ["Let's go with the simpler option.", "Let's not overcomplicate this."],
+    "example": "We don't need a new service for this. Let's keep it simple and add a flag.",
+    "exampleKo": "이걸 위해 새 서비스까지는 필요 없어요. 심플하게 플래그 하나 추가하시죠.",
+    "note": "복잡한 안 대신 단순한 안을 제안할 때. 'keep it simple'이 가장 자연스러운 표현입니다."
+  },
+  {
+    "id": 2, "added": "2026-10-30", "category": "보고·공유",
+    "ko": "저는 이렇게 작성하였습니다",
+    "en": "Here's what I wrote.",
+    "alt": ["Here's my draft.", "This is how I wrote it. Let me know what you think."],
+    "example": "Here's my draft of the release note. Let me know if anything's missing.",
+    "exampleKo": "릴리즈 노트는 이렇게 작성해봤습니다. 빠진 게 있으면 알려주세요.",
+    "note": "검토를 받으려는 맥락이면 뒤에 'Let me know what you think.'를 붙이면 자연스럽습니다."
+  },
+  {
+    "id": 3, "added": "2026-10-30", "category": "감사",
+    "ko": "확인 감사드립니다",
+    "en": "Thanks for checking.",
+    "alt": ["Thanks for taking a look.", "Thank you for confirming."],
+    "example": "Thanks for taking a look. I'll merge it now.",
+    "exampleKo": "확인 감사합니다. 지금 머지하겠습니다.",
+    "note": "검토해줬을 때는 'taking a look', 사실 여부를 확인해줬을 때는 'confirming'이 잘 맞습니다."
+  },
+  {
+    "id": 4, "added": "2026-10-30", "category": "보고·공유",
+    "ko": "OO한 상황이 있어 공유드립니다",
+    "en": "Just a heads-up: [situation].",
+    "alt": ["I wanted to let you know that [situation].", "FYI, [situation]."],
+    "example": "Just a heads-up: the deployment is delayed because of a build failure.",
+    "exampleKo": "빌드 실패로 배포가 지연되는 상황이 있어 공유드립니다.",
+    "note": "'heads-up'은 미리 알려두는 공유에 딱 맞는 표현입니다. 가벼운 공유는 'FYI'로도 충분합니다."
+  },
+  {
+    "id": 5, "added": "2026-10-30", "category": "요청",
+    "ko": "OO를 요청드립니다",
+    "en": "I'd like to request [X].",
+    "alt": ["Could I get [X]?", "Could you please [do X]?"],
+    "example": "I'd like to request access to the staging server.",
+    "exampleKo": "스테이징 서버 접근 권한을 요청드립니다.",
+    "note": "'I'd like to ~'는 정중하면서도 딱딱하지 않습니다. 동료 사이라면 'Could I get ~?'가 더 편합니다."
+  },
+  {
+    "id": 6, "added": "2026-10-30", "category": "요청",
+    "ko": "OO를 확인해주실 수 있으실까요?",
+    "en": "Could you take a look at [X]?",
+    "alt": ["Would you mind checking [X]?", "Could you confirm [X]?"],
+    "example": "Could you take a look at this PR when you have a moment?",
+    "exampleKo": "시간 되실 때 이 PR 확인해주실 수 있으실까요?",
+    "note": "'when you have a moment / when you get a chance'를 붙이면 재촉하는 느낌이 줄어듭니다."
+  },
+  {
+    "id": 7, "added": "2026-10-30", "category": "보고·공유",
+    "ko": "무시해주셔도 괜찮습니다",
+    "en": "Feel free to ignore this.",
+    "alt": ["Please disregard this message.", "No action needed."],
+    "example": "Sorry, wrong channel. Please disregard this message.",
+    "exampleKo": "채널을 잘못 골랐네요. 무시해주셔도 괜찮습니다.",
+    "note": "잘못 보낸 메시지에는 'Please disregard', 참고만 하라는 의미면 'No action needed'가 자연스럽습니다."
+  },
+  {
+    "id": 8, "added": "2026-10-30", "category": "사과",
+    "ko": "죄송합니다. 제 실수였습니다",
+    "en": "Sorry, that was my mistake.",
+    "alt": ["That's on me.", "My bad. (캐주얼)"],
+    "example": "Sorry, that was my mistake. I've fixed the config and redeployed.",
+    "exampleKo": "죄송합니다, 제 실수였습니다. 설정 수정해서 다시 배포했습니다.",
+    "note": "사과 뒤에 어떻게 조치했는지를 바로 붙이면 신뢰를 줍니다. 'My bad'는 친한 동료 사이에서만."
+  },
+  {
+    "id": 9, "added": "2026-10-30", "category": "질문",
+    "ko": "OO를 어떻게 활용할 수 있는지 잘 모르겠습니다",
+    "en": "I'm not sure how to use [X].",
+    "alt": ["I'm not sure how we can make use of [X].", "Could you help me understand how to use [X]?"],
+    "example": "I'm not sure how we can make use of this dashboard. Could you walk me through it?",
+    "exampleKo": "이 대시보드를 어떻게 활용할 수 있는지 잘 모르겠습니다. 한번 설명해주실 수 있을까요?",
+    "note": "'활용'은 use / make use of / leverage 순으로 격식이 올라갑니다. 'walk me through'는 차근차근 설명해달라는 뜻입니다."
+  },
+  {
+    "id": 10, "added": "2026-10-30", "category": "요청",
+    "ko": "OO를 삭제하고 싶습니다",
+    "en": "I'd like to delete [X].",
+    "alt": ["I'd like to remove [X].", "Can we get rid of [X]?"],
+    "example": "I'd like to remove the old feature flags from the config.",
+    "exampleKo": "설정에서 예전 피처 플래그들을 삭제하고 싶습니다.",
+    "note": "데이터·파일을 지울 때는 delete, 목록이나 구성에서 빼는 건 remove가 더 자연스럽습니다."
+  },
+  {
+    "id": 11, "added": "2026-10-30", "category": "사과",
+    "ko": "미팅으로 답변이 늦었습니다",
+    "en": "Sorry for the late reply. I was in a meeting.",
+    "alt": ["Sorry, I was tied up in meetings.", "Apologies for the delay. I just got out of a meeting."],
+    "example": "Sorry for the late reply, I was tied up in meetings. Yes, that works for me.",
+    "exampleKo": "미팅으로 답변이 늦었습니다. 네, 저는 괜찮습니다.",
+    "note": "'tied up'은 '바빠서 꼼짝 못 했다'는 뜻으로 자주 씁니다."
+  },
+  {
+    "id": 12, "added": "2026-10-30", "category": "진행",
+    "ko": "바로 가겠습니다",
+    "en": "I'll be right there.",
+    "alt": ["On my way.", "Coming now."],
+    "example": "Got it, I'll be right there.",
+    "exampleKo": "네, 바로 가겠습니다.",
+    "note": "회의실이나 콜에 바로 들어가겠다고 할 때. 메신저에서는 'On my way'가 짧고 흔합니다."
+  },
+  {
+    "id": 13, "added": "2026-10-30", "category": "회의·의견",
+    "ko": "맞습니다 (상대방의 질문에 공감하며)",
+    "en": "Exactly.",
+    "alt": ["That's right.", "You're right.", "Good point."],
+    "example": "A: So the issue only happens on iOS? / B: Exactly.",
+    "exampleKo": "A: 그러니까 iOS에서만 생기는 문제인 거죠? / B: 맞습니다.",
+    "note": "상대가 정확히 짚었을 때는 'Exactly', 좋은 지적에 동의할 때는 'Good point'가 잘 어울립니다."
+  },
+  {
+    "id": 14, "added": "2026-10-30", "category": "보고·공유",
+    "ko": "OO를 보내드립니다",
+    "en": "Here's [X].",
+    "alt": ["I'm sending you [X].", "Please find [X] attached.", "Attached is [X]."],
+    "example": "Here's the meeting summary from today.",
+    "exampleKo": "오늘 회의 요약 보내드립니다.",
+    "note": "'Please find attached'는 격식 있는 메일용입니다. 요즘은 'Here's ~'나 'Attached is ~'도 많이 씁니다."
+  },
+  {
+    "id": 15, "added": "2026-10-30", "category": "감사",
+    "ko": "고생 많으셨습니다",
+    "en": "Thanks for all your hard work.",
+    "alt": ["Great work, everyone.", "Nice job on this."],
+    "example": "The launch went smoothly. Thanks for all your hard work, everyone!",
+    "exampleKo": "런칭 잘 끝났습니다. 다들 고생 많으셨습니다!",
+    "note": "직역('You suffered a lot')하면 어색합니다. 영어에서는 감사나 칭찬으로 표현합니다."
+  },
+  {
+    "id": 16, "added": "2026-10-30", "category": "질문",
+    "ko": "OO와 관련된 정책이 있을까요?",
+    "en": "Is there a policy on [X]?",
+    "alt": ["Do we have any policy regarding [X]?", "Are there any guidelines for [X]?"],
+    "example": "Is there a policy on using personal devices for work?",
+    "exampleKo": "업무에 개인 기기를 쓰는 것과 관련된 정책이 있을까요?",
+    "note": "공식 규정은 policy, 권장 수준의 규칙은 guideline입니다."
+  },
+  {
+    "id": 17, "added": "2026-10-30", "category": "요청",
+    "ko": "확인 요청 드립니다",
+    "en": "Could you please review this?",
+    "alt": ["Please take a look when you get a chance.", "Requesting your review."],
+    "example": "I've updated the design doc. Could you please review it by Friday?",
+    "exampleKo": "설계 문서 업데이트했습니다. 금요일까지 확인 요청 드립니다.",
+    "note": "기한이 있으면 'by Friday'처럼 함께 적어주세요."
+  },
+  {
+    "id": 18, "added": "2026-10-30", "category": "요청",
+    "ko": "미리 이야기 해주시면 좋을 것 같습니다",
+    "en": "It'd be great if you could let me know in advance.",
+    "alt": ["Please give me a heads-up beforehand.", "Could you let us know ahead of time?"],
+    "example": "Next time, it'd be great if you could let me know in advance before changing the schema.",
+    "exampleKo": "다음에는 스키마 변경 전에 미리 이야기 해주시면 좋을 것 같습니다.",
+    "note": "'It'd be great if ~'는 요구를 부드럽게 전달하는 표현이라 피드백할 때 유용합니다."
+  },
+  {
+    "id": 19, "added": "2026-10-30", "category": "질문",
+    "ko": "혹시나 싶어 질문드립니다",
+    "en": "Just to double-check, ...",
+    "alt": ["Just to be sure, ...", "Just in case, I wanted to ask ..."],
+    "example": "Just to double-check, the deadline is this Friday, right?",
+    "exampleKo": "혹시나 싶어 질문드리는데, 마감이 이번 주 금요일 맞죠?",
+    "note": "이미 알고 있지만 확인차 묻는 뉘앙스입니다. 문장 끝에 ', right?'을 붙이면 더 자연스럽습니다."
+  },
+  {
+    "id": 20, "added": "2026-10-30", "category": "질문",
+    "ko": "혹시 관련하여 업데이트 된 것이 있을까요?",
+    "en": "Any updates on this?",
+    "alt": ["Just following up. Is there any update on this?", "Has there been any progress on this?"],
+    "example": "Hi, just following up on the API access request. Any updates?",
+    "exampleKo": "안녕하세요, API 접근 요청 건 혹시 업데이트 된 것이 있을까요?",
+    "note": "재촉하는 느낌을 줄이려면 'Just following up'으로 시작하세요."
+  },
+  {
+    "id": 21, "added": "2026-10-30", "category": "진행",
+    "ko": "제가 업데이트 해두겠습니다",
+    "en": "I'll update it.",
+    "alt": ["I'll go ahead and update it.", "I'll take care of the update."],
+    "example": "Good catch. I'll go ahead and update the docs.",
+    "exampleKo": "좋은 지적이네요. 문서는 제가 업데이트 해두겠습니다.",
+    "note": "'go ahead and ~'는 '알아서 처리해두겠다'는 뉘앙스를 더해줍니다."
+  },
+  {
+    "id": 22, "added": "2026-10-30", "category": "요청",
+    "ko": "해주시면 감사합니다",
+    "en": "I'd appreciate it if you could [X].",
+    "alt": ["It would be great if you could [X].", "Thanks in advance!"],
+    "example": "I'd appreciate it if you could share the slides after the meeting.",
+    "exampleKo": "회의 끝나고 슬라이드 공유해주시면 감사하겠습니다.",
+    "note": "부탁을 마무리할 때는 'Thanks in advance!'만 써도 됩니다."
+  },
+  {
+    "id": 23, "added": "2026-10-30", "category": "진행",
+    "ko": "오늘 진행되어도 괜찮을까요?",
+    "en": "Is it okay if we go ahead today?",
+    "alt": ["Would it be okay to proceed today?", "Are we good to go today?"],
+    "example": "The migration is ready. Is it okay if we go ahead today?",
+    "exampleKo": "마이그레이션 준비 끝났습니다. 오늘 진행되어도 괜찮을까요?",
+    "note": "'good to go'는 '준비 완료, 진행해도 된다'는 뜻으로 업무에서 아주 자주 씁니다."
+  },
+  {
+    "id": 24, "added": "2026-10-30", "category": "진행",
+    "ko": "바로 진행하면 되는걸까요?",
+    "en": "Should I go ahead now?",
+    "alt": ["Am I good to proceed?", "Can I go ahead with this right away?"],
+    "example": "Thanks for approving. Should I go ahead and merge it now?",
+    "exampleKo": "승인 감사합니다. 바로 머지 진행하면 되는걸까요?",
+    "note": "허락을 구하는 질문이므로 'Should I ~?'가 가장 간단합니다."
+  },
+  {
+    "id": 25, "added": "2026-10-30", "category": "회의·의견",
+    "ko": "저도 참여하겠습니다",
+    "en": "I'll join too.",
+    "alt": ["Count me in.", "I'll be there as well."],
+    "example": "If you're doing a session on observability, count me in.",
+    "exampleKo": "옵저버빌리티 세션 하시면 저도 참여하겠습니다.",
+    "note": "'Count me in'은 '저도 끼워주세요'라는 적극적인 느낌입니다."
+  },
+  {
+    "id": 26, "added": "2026-10-30", "category": "진행",
+    "ko": "제가 코멘트 달아두겠습니다",
+    "en": "I'll leave a comment.",
+    "alt": ["I'll add my comments.", "I'll drop a comment on it."],
+    "example": "I have a few thoughts on the error handling. I'll leave comments on the PR.",
+    "exampleKo": "에러 처리 쪽에 의견이 좀 있어서, PR에 코멘트 달아두겠습니다.",
+    "note": "코멘트를 '단다'는 leave / add / drop을 씁니다. 'put a comment'는 잘 쓰지 않습니다."
+  },
+  {
+    "id": 27, "added": "2026-10-30", "category": "진행",
+    "ko": "제가 티켓 생성해두겠습니다",
+    "en": "I'll create a ticket.",
+    "alt": ["I'll file a ticket for this.", "I'll open a ticket."],
+    "example": "Let's not block the release on this. I'll file a ticket for it.",
+    "exampleKo": "이거 때문에 릴리즈를 막지는 말죠. 제가 티켓 생성해두겠습니다.",
+    "note": "버그를 접수한다는 맥락에서는 'file a ticket / file a bug'가 자주 쓰입니다."
+  },
+  {
+    "id": 28, "added": "2026-10-30", "category": "보고·공유",
+    "ko": "이 내용 참고 하시면 됩니다",
+    "en": "Please refer to this.",
+    "alt": ["You can use this as a reference.", "This should help."],
+    "example": "For the setup steps, please refer to this doc.",
+    "exampleKo": "세팅 방법은 이 문서 참고 하시면 됩니다.",
+    "note": "'refer to'는 무엇을 참고할지 대상이 바로 뒤에 옵니다. 가볍게는 'This should help'도 좋습니다."
+  },
+  {
+    "id": 29, "added": "2026-10-30", "category": "진행",
+    "ko": "이 부분은 제가 확인해보겠습니다",
+    "en": "I'll look into this.",
+    "alt": ["Let me check on that.", "I'll take a look at this part."],
+    "example": "I'm not sure why the job failed. I'll look into it and get back to you.",
+    "exampleKo": "잡이 왜 실패했는지 모르겠네요. 이 부분은 제가 확인해보고 다시 말씀드리겠습니다.",
+    "note": "'look into'는 원인을 파고든다는 뉘앙스입니다. 'get back to you'(다시 연락드릴게요)와 짝으로 자주 씁니다."
+  }
+]
