@@ -1,0 +1,27 @@
+{
+  "name": "oh-my-business-english",
+  "displayName": "Oh My Business English",
+  "version": "0.1.0",
+  "description": "한국 회사에서 쓰는 말을 영어로, 프롬프트 위에 1분마다 하나씩 보여줍니다",
+  "author": { "name": "jonghoonpark", "url": "https://github.com/dev-jonghoonpark" },
+  "homepage": "https://dev-jonghoonpark.github.io/oh-my-business-english/",
+  "repository": "https://github.com/dev-jonghoonpark/oh-my-business-english",
+  "license": "MIT",
+  "keywords": ["english", "learning", "mod"],
+  "userConfig": {
+    "interval_seconds": {
+      "type": "number",
+      "title": "표현이 바뀌는 간격(초)",
+      "description": "자동으로 다음 표현으로 넘어가는 간격입니다.",
+      "default": 60,
+      "min": 10,
+      "max": 3600
+    },
+    "shuffle": {
+      "type": "boolean",
+      "title": "무작위 순서",
+      "description": "켜면 표현을 섞어서 보여줍니다.",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "oh-my-business-english",
+  "owner": { "name": "jonghoonpark" },
+  "plugins": [
+    {
+      "name": "oh-my-business-english",
+      "source": "./",
+      "description": "한국 회사에서 쓰는 말을 영어로, 프롬프트 위에 1분마다 하나씩 보여줍니다"
+    }
+  ]
+}

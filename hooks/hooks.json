@@ -1,0 +1,4 @@
+{
+  "description": "프롬프트 위에 업무 영어 표현을 보여주는 mod",
+  "modules": ["./register.js"]
+}
